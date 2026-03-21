@@ -66,7 +66,7 @@ public static int Factorial(int n){
     }
 <img src="/images/1/a1t4.png" width="500">
 
- The formula for n! is n*(n-1)*(n-2)*...*1. This code does exactly that. However, in my case it even goes up to 0 (e.g. ...2*1*0) . 
+ The formula for n! is n*(n-1)*(n-2)*...*1 .This code does exactly that. However, in my case it even goes up to 0 (e.g. ...2*1*0). 
 
 ### Task 5.
 public static int Fibonacci(int n){
@@ -79,6 +79,7 @@ public static int Fibonacci(int n){
     }
   
 <img src="/images/1/a1t5.png" width="500">
+hui
 
 ### Task 6.
 public static int Power(int a, int n){
