@@ -16,6 +16,8 @@ public static void Digits(int numb){
   
 <img src="/images/1/a1t1.png" width="500">
 
+My thought process behind this was that everytime i will divide anything by 10 it will leave a digit remainder which i can just later print in reverse order. For it to print in reverse ( which is the correct order) i wrote the printing part after the recursion. This way when it comes to the last digit 5/10= 0 with remainder 5 whole program will start printing the remainders. Recursion just uses the new value (quotient) from **numb/10.**
+
 ### Task 2.
 public static double Average(int div, int[] list){
 
@@ -25,11 +27,12 @@ public static double Average(int div, int[] list){
         int i = div - 1;
         double d = (double) list[i]/list.length;
         
-        Average(i, list);
         return d + Average(i, list);
     }
   
 <img src="/images/1/a1t2.png" width="500">
+
+Since i have number of elements in the list at my disposal, i thought i could use it as index for accessing elements of the list. I added subtraction to the start because the list indexing can go up to **n-1**, where n is the number of elements in the list. Only then i can divide the element that i got from the list by the length of the list and add the result to next element's same result. This will return the sum of the 'averages' at the end. 
 
 ### Task 3.
 public static void isPrime(int n, int i){
@@ -51,6 +54,8 @@ public static void isPrime(int n, int i){
     }
   
 <img src="/images/1/a1t3.png" width="500">
+
+ANY even number is not prime, so first thing is to make sure the number is odd. **int i** here serves as numbers that **n** will be divided by recursively. If even one of the **i's** is is divisor of n then it would automatically mean that this number is not prime. Hence, the **if statement in else**. If it leaves remainder, i will recursively divide **n** by **i** until it is equal to n, which will lead to the second **else statement**  and conclude that it is indeed prime number.
 
 ### Task 4.
 public static int Factorial(int n){
