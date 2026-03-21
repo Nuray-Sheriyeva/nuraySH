@@ -2,7 +2,7 @@
 ## FIRST ASSIGNMENT
 
 ### Task 1. Print Difits of Number 
-public static void Digits(int numb){
+  public static void Digits(int numb){
 
         if (numb==0) return;
 
