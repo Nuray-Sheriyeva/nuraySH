@@ -18,6 +18,7 @@ public static void Digits(int numb){
 ### Task 2.
 public static double Average(int div, int[] list){
 
+        
         if (div==0) return 0.0;
 
         int i = div - 1;
@@ -32,6 +33,7 @@ public static double Average(int div, int[] list){
 ### Task 3.
 public static void isPrime(int n, int i){
 
+        
         if (n%2==0) System.out.println("Composite");
 
         else {
