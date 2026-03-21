@@ -2,6 +2,7 @@
 ## FIRST ASSIGNMENT
 
 ### Task 1.
+
 public static void Digits(int numb){
 
         if (numb==0) return;
