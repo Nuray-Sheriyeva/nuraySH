@@ -12,5 +12,4 @@
         Digits(d);
         System.out.println(r);
   }
-
-![](images/1/a1t1.png)
+<img src="/images/1/a1t1.png" width="500">
