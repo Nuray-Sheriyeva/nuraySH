@@ -66,7 +66,7 @@ public static int Factorial(int n){
     }
 <img src="/images/1/a1t4.png" width="500">
 
- The formula for n! is n*(n-1)*(n-2)*...*1 .This code does exactly that. However, in my case it even goes up to 0 (e.g. ...2*1*0). 
+ The formula for n! is n*(n-1)*(n-2)*...*1 .This code does exactly that. However, in my case it even goes up to 0 (e.g. ... 2*1*0). I did this so i would also have a case for 0 input. If i were to write it to end exactly at 1, I could add if(or else if doesn't matter) (n==1) return 1;
 
 ### Task 5.
 public static int Fibonacci(int n){
@@ -79,7 +79,8 @@ public static int Fibonacci(int n){
     }
   
 <img src="/images/1/a1t5.png" width="500">
-hui
+
+The Fibonacci sequence has base case of 0 and 1 to their corresponding F. For code to work it should follow the rule given, hence the **return Fibonacci(n-1)+Fibonacci(n-2);**. When program reaches Fibonacci(1)+Fibonacci(0) it will replace them with 1+0 and start going in reverse adding up all the numbers before it.
 
 ### Task 6.
 public static int Power(int a, int n){
@@ -89,6 +90,8 @@ public static int Power(int a, int n){
     }
   
 <img src="/images/1/a1t6.png" width="500">
+
+For it to show the power I will need them to multiply to each other, that is why i need the **a•** at **return**. All recursion will stack like a*a*a*a*a*a*a*...*Power(a, 1) and when **int n** reaches 1 it will just return the a, making the **return** the usual power equation.
 
 ### Task 7.
 public static void Reverse(int n, int[] list){
@@ -102,6 +105,8 @@ public static void Reverse(int n, int[] list){
     }
   
 <img src="/images/1/a1t7.png" width="500">
+
+This is almost the same as the first task but the printing part happens before the recursion. The last elements of the list will be printed first. 
 
 ### Task 8.
 public static String DinS(String s, int i){
@@ -119,6 +124,12 @@ public static String DinS(String s, int i){
     }
 <img src="/images/1/a1t8.png" width="500">
 
+1. check if the string is not null.
+2. access character using **.charAt(i)**.
+3. check each character if it is a digit using **.isDigit()**.
+4. if it is a digit then recursively check the others too until **int i** becomes size of the list.
+5. if not then immediately jump to **else** and end the function using "No" as responce.
+
 ### Task 9.
 public static int CinS(String s){
 
@@ -128,6 +139,8 @@ public static int CinS(String s){
     }
   
 <img src="/images/1/a1t9.png" width="500">
+
+Honestly, i dont know. I did not **get** the **purpose** of this task so then i just used **.length()**
 
 ### Task 10.
 public static int GCD(int a, int b){
@@ -156,3 +169,5 @@ public static int GCD(int a, int b){
     }
     
 <img src="/images/1/a1t10.png" width="500">
+
+I made two cases: first one if the a is bigger integer and second one if b is the bigger one. Both follow the same logic: find remainder, if smaller number is divisble by the remainder then it is the GCD, if not then recursively find one that is GCD (unless there is not such number which will result in printing 1 as GCD).
