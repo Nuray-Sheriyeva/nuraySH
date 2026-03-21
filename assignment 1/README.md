@@ -96,6 +96,7 @@ public static void Reverse(int n, int[] list){
 
 ### Task 8.
 public static String DinS(String s, int i){
+
         if(s==null) return "Null";
         if (i==s.length()) return "Yes";
         
@@ -111,6 +112,7 @@ public static String DinS(String s, int i){
 
 ### Task 9.
 public static int CinS(String s){
+
         if (s==null) return 0;
         
         return s.length();
@@ -120,6 +122,8 @@ public static int CinS(String s){
 
 ### Task 10.
 public static int GCD(int a, int b){
+
+
         if (a==0 || b==0) return 1;
         int r;
         if (a>b){
