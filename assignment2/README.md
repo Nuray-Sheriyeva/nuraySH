@@ -1,4 +1,4 @@
-<img width="542" height="517" alt="image" src="https://github.com/user-attachments/assets/6a4b2926-23a3-4d64-b1cc-d9de0adf403e" /># SHERIYEVA NURAY
+# SHERIYEVA NURAY
 # IT-2501
 # ASSIGNMENT 2
 ## PHYSICAL AND LOGICAL DATA STRUCTURES
