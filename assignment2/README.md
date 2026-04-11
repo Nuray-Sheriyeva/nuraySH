@@ -76,5 +76,7 @@
 
 2. outputs
 
-the output of this is video in the images folder.
+the output of this task is the single video in the images/2 folder. sorry for the inconvenience, you have to download it too because github will not show it like that.
+But overall it works like the following:
+After run is pressed part3() method's while loop starts which can be only exited by pressing 4 in the main menu. Other 3 option include exactly what the task description wanted. by pressing 1 user gets to send request to open a bank account, deposit or withdraw the money(if they have an account already). 2 will have the user entering the atm which opens up possibilities to withdraw some money or see the balance by entering user's username. 3 is the admins page which will grant 2 possibilities: view and process the requests and view billing requests.
 
