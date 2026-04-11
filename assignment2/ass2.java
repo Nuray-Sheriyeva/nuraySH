@@ -26,39 +26,39 @@ public class ass2 {
             user2.balance = 300000;
             list.add(user2);
 
-            //list.get();
-            //list.find(user1.username);
-            //list.deposit(input, history);
-            //list.withdraw(input, history);
-            //history.peek();
-            //history.pop();
-            //bills.addBill("Electricity Bill");
-            //bills.addBill("Internet Bill");
-            //bills.addBill("University Bill");
-            //bills.processBill();
-            //bills.display();
+            list.get();
+            list.find(user1.username);
+            list.deposit(input, history);
+            list.withdraw(input, history);
+            history.peek();
+            history.pop();
+            bills.addBill("Electricity Bill");
+            bills.addBill("Internet Bill");
+            bills.addBill("University Bill");
+            bills.processBill();
+            bills.display();
 
-            //accounts[0] = new BankAccount();
-            //accounts[0].username = "Ali";
-            //accounts[0].balance = 150000;
+            accounts[0] = new BankAccount();
+            accounts[0].username = "Ali";
+            accounts[0].balance = 150000;
         
-            //accounts[1] = new BankAccount();
-            //accounts[1].username = "Sanzhar";
-            //accounts[1].balance = 200000;
+            accounts[1] = new BankAccount();
+            accounts[1].username = "Sanzhar";
+            accounts[1].balance = 200000;
         
-            //accounts[2] = new BankAccount();
-            //accounts[2].username = "Merei";
-            //accounts[2].balance = 300000;
+            accounts[2] = new BankAccount();
+            accounts[2].username = "Merei";
+            accounts[2].balance = 300000;
 
-            //for (int i = 0; i < accounts.length; i++) {
-            //    System.out.println(accounts[i].username + " - " + accounts[i].balance);
-            //}
+            for (int i = 0; i < accounts.length; i++) {
+                System.out.println(accounts[i].username + " - " + accounts[i].balance);
+            }
 
-            //request.add("Gulnaz");
-            //request.process(list);
-            //list.get();
+            request.add("Gulnaz");
+            request.process(list);
+            list.get();
 
-            //part3(input, request, history, list, bills);
+            part3(input, request, history, list, bills);
 
             
     }
