@@ -14,7 +14,7 @@
 }
 
 2.
-<img src="/images/2/a2t11.png" width="500">
+<img width="1920" height="1200" alt="a1t11" src="https://github.com/user-attachments/assets/4856c47c-555e-4fd5-9768-b8f1ec8a8a50" />
 first i created default linkedlist structure relying on the lecture files. then i just edited it to my needs.
 i made sure that the data in it is BankAccount type (in MyNode). Next, i wrote the add(), get(), find(), deposit(), withdraw() methods. 
 
