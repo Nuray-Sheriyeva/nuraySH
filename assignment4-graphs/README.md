@@ -88,19 +88,40 @@ graph[5] = [2, 3]
 ## C. Algorithm Descriptions
 • BFS
 
+Breadth-First Search is a layer-by-layer traversal technique. It utilizes queue to travers through a labyrinth/maze/graph. Algorithm is structured as followed (in general) :
+
+1. Initialize queue and set (to store visited vertecies/nodes/tiles)
+2. Start from the index given or by default from the root and enqueue it.
+3. While the queue is not empty perform the followings:
+4.    dequeue the vertex/node/tile
+5.    get the neighbors ( in general we check if vertex/node/tile is the goal)
+6.    enqueue the neighbors
+7. Repeat the loop
+
 • DFS
+Depth-First Search is a path-oriented traversal technique. It may utilize a stack or recursion to travers through the same scenario. Algorithm is structured as followed (in general):
+
+1. Initialize a set to store visited vertices.
+2. Push the root to the set.
+3. For each element in the structure performs the following:
+4.     add to the _visited_ set.
+5.     get the neighbors.
+6.     recursively add and get the vertices.
+
+Both have time complexity of O(V+E) because i used adjacency list.
 ## D. Experiment Results
 • Comparison Table
+<img width="786" height="468" alt="image" src="https://github.com/user-attachments/assets/19722869-c94d-4d2a-ac52-7c292c36991e" />
 
 • Obervations
+I have run 10 runs with relative starts for breadth first search and depth first search. I have observed the time to be mostly remain the same throughout the runs except when i started from the 70% index whose time complexity went abnormally higher. I thought this was just mistake but i run it multiple times at that exact starting point and it always gave the same much higher time. In terms fo depth first search, I have noticed that smaller graphs had higher times and mostly it was the sum of medium and large graphs. I did not figure out why it did that.
+
 ## E. Screenshots
-• Graph structure output
-
-• BFS traversal output
-
-• DFS traversal output
+<img width="347" height="707" alt="image" src="https://github.com/user-attachments/assets/480128a5-2c9e-46b2-9b2a-1eebbfd05aa1" />
 
 • Performance results
+<img width="126" height="321" alt="image" src="https://github.com/user-attachments/assets/957efcde-f0da-4c63-b0df-8e13df3d5881" />
+
 ## F. Reflection Section
 • What you learned about graph traversal
 
