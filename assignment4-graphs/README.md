@@ -126,19 +126,36 @@ I have run 10 runs with relative starts for breadth first search and depth first
 ## F. Reflection Section
 • What you learned about graph traversal
 
+I already new these things so i did not techincally learn something new apart from how to code these in java. Overall, i know that graph consists of ordered pairs from vertices and edges. Graphs have 3 types. It can be traversed using breadth first search and depth first search. Breadth first search is better option when the goal is nearer to the root and depth first search is great when the goal is nearer to the end of a path. However, this is general definition and since we are travesrsing through the whole list it does not really apply here.
+
 • Differences between BFS and DFS
 
+The main difference between these searches is breadth first search goes layer by layer into the graph and depth forst search goes first into each path/branch up until the end.
+
 • Challenges faced during implementation
+I did not really face any challenges during implementation except understanding why we need the Experiment.java. I did not see that it needs to be used in the assignment.
 
 ## Analysis Quesstions
 • How does graph size affect BFS and DFS performance?
 
+In my results, I observed that BFS spends relatively the same amount of time on 10 and 30 elements graph but spends significantly more time on large 100 element graph. DFS, however, spends more time on smaller graphs rather than medium or large graphs and usually the time is the sum of the larger two. But in general i would think that it would affect it linearly, as the graph grows the time grows too. Also, the order for graph sizes in time (in ascending order) would be medium, small, large.
+
 • Which traversal is faster in your experiments?
+
+In medium and large graphs both of the searches spent the same amount of time to traverse through them. Nevertheless, small graphs did differ in times of these two searches. DFS performed way worse than BFS in 10 element graph.
 
 • Do results match the expected complexity O(V + E)?
 
+I dont think so. It did not match for me. Maybe bigger and more time consuming experiments need to be done in order to fully see the time complexity. But I do believe that it is O(V+E).
+
 • How does graph structure affect traversal order?
+
+Because arrangement of vertices and edges determines which neighbors become reachable first during BFS or DFS. Especially in DFS becuase it follows a deep path on eby one so pathes change drastically.
 
 • When is BFS preferred over DFS?
 
+When we have a certain goal we want to reach and it is nearer to the root.
+
 • What are the limitations of DFS?
+
+DFS consume large recursion memory and may get stuck exploring deep paths before finding closer solutions. It also does not gurantee the shortest path.
