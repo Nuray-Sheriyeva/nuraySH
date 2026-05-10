@@ -28,34 +28,63 @@ Graph class is more complex in comparison to previous too. It consists of addVer
 2. **addEdge(Vertex from, Vertex to)**
    
    checks if _from_ (source) vertex exists already and if false it runs addVertex(from).
+
    checks if _to_ (destination) vertex exists already and if false it runs addVertex(to).
+
    adds destination vertex into source vertex's neighbors list
 
-3. **printGraph()**
+4. **printGraph()**
    
    loops through every vertex and prints its each neighbor to print the whole graph structure
 
-4. **dfs()**
+5. **dfs()**
    
    creates _visited_ list to store vertices that were already visited using set.
+
    checks each vertex if it is in _visited_ and if not run visitVertex(v, visited)
 
-5. **visitVertex(Vertex v, Set<Vertex> visited)**
+7. **visitVertex(Vertex v, Set<Vertex> visited)**
    
    adds the input vertex v into the list of visited vertices.
+
    gets its neighbors.
+
    for each neighbor repeats the process of recursively adding vertices to visited set
 
-6. **bfs(Vertex start)**
+9. **bfs(Vertex start)**
    
    creates visited set and queue (queue because both queue and bfs use FIFO (first is first out)).
+
    adds the starting vertex to visited set and queue.
+
    creates while loop that stops only when queue gets empty.
+
      delete fron vertex from queue.
+
      get the neighbors of the vertex.
+
      for each neighbor, add it to the visited set and queue.
 
 • Adjacency list representation
+
+For this assignment, I chose to work with linked list structure. You can observe it in creating queue for bfs(): 
+
+Queue<Vertex> q = new LinkedList<>(); //linked list useful when there are many inserts
+
+For instance, a small graph of 5 elements could look like this in adjacency list representation:
+
+graph[0] = [1]
+
+graph[1] = [0, 2 ,3]
+
+graph[2] = [1, 5]
+
+graph[3] = [3, 4, 5]
+
+graph[4] = [5]
+
+graph[5] = [2, 3]
+
 ## C. Algorithm Descriptions
 • BFS
 
