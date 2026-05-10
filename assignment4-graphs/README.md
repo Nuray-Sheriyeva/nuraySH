@@ -121,6 +121,7 @@ I have run 10 runs with relative starts for breadth first search and depth first
 
 • Performance results
 <img width="126" height="321" alt="image" src="https://github.com/user-attachments/assets/957efcde-f0da-4c63-b0df-8e13df3d5881" />
+<img width="129" height="531" alt="image" src="https://github.com/user-attachments/assets/d8e63bd3-a4a2-43d6-98ba-9f037223f023" />
 
 ## F. Reflection Section
 • What you learned about graph traversal
